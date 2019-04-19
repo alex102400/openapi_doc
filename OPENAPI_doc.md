@@ -259,6 +259,8 @@ task_data_ids|long[]|外呼数据行对应的任务数据编号，用于结果�
 # 四、创建外呼任务
 功能：面向需要灵活管控的业务场景。可以按照不同的业务维度创建多组任务、分批多次向指定任务提交号码数据，可以对外呼任务进行启动、暂停、删除等控制操作。
 
+注意：如果启高性能模式平台将不提供通话录音。
+
 接口地址：https://www.xfyeta.com/openapi/outbound/v1/task/create?token=08236d0aeeee4d5b566db5f4adc41a63  
 
 
@@ -274,6 +276,7 @@ time_range|否|string[]|外呼时间段|
 time_begin|是|long|任务开始时间|毫秒时间戳
 time_end|否|long|任务结束时间|毫秒时间戳
 voice_code|否|string|发音人编码|
+trubo_mode|否|boolean|高性能模式|默认false。
 
 ### 请求示例
 ~~~
